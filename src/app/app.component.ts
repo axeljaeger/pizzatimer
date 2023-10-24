@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { interval } from 'rxjs';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { NgIf, NgStyle } from '@angular/common';
 
 
 enum ApplicationState {
@@ -11,9 +15,11 @@ enum ApplicationState {
 };
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css'],
+    standalone: true,
+    imports: [NgIf, MatIconModule, MatButtonModule, NgStyle, MatProgressSpinnerModule]
 })
 export class AppComponent {
   public devices: MediaDeviceInfo[] = [];
