@@ -1,0 +1,17 @@
+:host {
+    text-align: center;
+}
+
+.big-icon {
+    font-size: 250px;
+    height: 250px ;
+    width: 250px;
+    color:brown;
+    display: block;
+    margin: 0 auto;   
+}
+
+.start-button {
+    margin: 0 auto;
+    display: block;
+}
