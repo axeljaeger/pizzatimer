@@ -7,7 +7,7 @@
 <div *ngIf="applicationState === 2" style="text-align: center;">
 Product: {{detectedCode}}<br>
 Time: 08:00
-<mat-spinner [mode]="'determinate'" ></mat-spinner>
+<mat-spinner [mode]="'determinate'" [value]="20" [diameter]="250"></mat-spinner>
 <button mat-raised-button color="primary" (click)="openCamera()">Go Back</button>
 <button mat-raised-button color="primary" (click)="openCamera()">Start timer</button>
 </div>
