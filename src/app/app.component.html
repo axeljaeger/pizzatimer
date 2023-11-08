@@ -1,5 +1,12 @@
-<ng-container [ngSwitch]="applicationState">
-  <app-welcome *ngSwitchCase="ApplicationState.Idle" (start)="openCamera()"/>
-  <app-camera *ngSwitchCase="ApplicationState.Scanning" (codeDetected)="setupTimer()"/>
-  <app-timer *ngSwitchCase="ApplicationState.Timer" (back)="openCamera()"/>
-</ng-container>
+
+@switch (applicationState) {
+  @case (ApplicationState.Idle) {
+  <app-welcome (start)="openCamera()"/>
+}
+  @case (ApplicationState.Scanning) {
+  <app-camera (codeDetected)="setupTimer()"/>
+}
+  @case (ApplicationState.Timer) {
+  <app-timer (back)="openCamera()"/>
+}
+}
