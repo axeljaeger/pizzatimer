@@ -39,7 +39,7 @@
     "@storybook/testing-library": "^0.2.2",
     "@types/jasmine": "~4.3.0",
     "@web/test-runner": "^0.18.0",
-    "jasmine-core": "~4.6.0",
+    "jasmine-core": "~5.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "storybook": "^7.5.3",
